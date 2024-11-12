@@ -1,0 +1,84 @@
+/* Container Styling */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.container h2 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Marquee Styling */
+.container marquee {
+    color: #666;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Patient List Title */
+.container a {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0 10px;
+}
+
+/* Table Styling */
+.tableFixHead {
+    overflow-y: auto;
+    max-height: 400px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td {
+    color: #555;
+}
+
+/* Table Header Fix */
+.tableFixHead thead {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+}
+
+/* General Styling */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}

@@ -1,0 +1,77 @@
+/* Center the container with a shadow and soft background */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.text-center {
+    text-align: center;
+    color: #2c3e50;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Style the form groups and labels */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Style the form inputs */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Style the submit button */
+.btn-success {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+/* Add subtle animations for better user experience */
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+}

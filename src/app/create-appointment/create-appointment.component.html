@@ -1,0 +1,43 @@
+<nav style="margin: auto;" class="navbar navbar-expand-lg bg-dark">
+    <a style="color: antiquewhite;" class="navbar-brand" href="#">SUKHSAGAR HOSPITAL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+                <a style="color: antiquewhite;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/appointmentlist">Back</a>
+
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<div class="container">
+    <h2 class="text-center">Add New Appointment</h2>
+    
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" class="form-control" name="name" placeholder="Enter Name" [(ngModel)]="appointment.name"/>
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="text" id="age" class="form-control" name="age" placeholder="Enter Age" [(ngModel)]="appointment.age"/>
+        </div>
+        <div class="form-group">
+            <label>Systomps</label>
+            <input type="text" id="systomps" class="form-control" name="systomps" placeholder="Enter Systomps" [(ngModel)]="appointment.systomps"/>
+        </div>
+        <div class="form-group">
+            <label>Number</label>
+            <input type="text" id="number" class="form-control" name="number" placeholder="Enter Number" [(ngModel)]="appointment.number"/>
+        </div>
+
+<button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+
+</div>
