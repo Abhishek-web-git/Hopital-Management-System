@@ -36,6 +36,7 @@
             <th>age </th>
             <th>Systomps </th>
             <th>Number</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -45,6 +46,9 @@
             <td>{{appointment.age}}</td>
             <td>{{appointment.systomps}}</td>
             <td>{{appointment.number}}</td>
+            <td>
+                <button (click)="delete(appointment.id)" class="btn btn-danger">Delete</button>
+            </td>
             
         </tr>
     </tbody>

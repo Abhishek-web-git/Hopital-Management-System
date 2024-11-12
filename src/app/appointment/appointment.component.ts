@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppointmentService } from '../appointment.service';
 import { Appointment } from '../appointment';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-appointment',
@@ -19,6 +20,15 @@ export class AppointmentComponent {
     this.appointmentService.getAllAppointments().subscribe(data=>{
       this.appointments=data;
     })
+  }
+
+  delete(id:number){
+
+    this.appointmentService.deleteAppointment(id).subscribe(data=>{
+      console.log(data);
+      this.getAppointments();
+    })
+
   }
 
 
