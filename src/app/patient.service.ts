@@ -7,15 +7,17 @@ import { Patient } from './patient';
   providedIn: 'root'
 })
 export class PatientService {
-  deletePatient(id: number) {
-    throw new Error('Method not implemented.');
-  }
+  
 
   constructor(private httpClient:HttpClient) { }
 
-  private baseUrl="http://localhost:8080/api/v1"
+  private baseUrl="http://localhost:8080/api/v1/patients"
 
   getPatientList():Observable<Patient[]>{
     return this.httpClient.get<Patient[]>(`${this.baseUrl}`)
+  }
+  deletePatient(id:number):Observable<object>{
+    return this.httpClient.delete(`${this.baseUrl}/${id}`);
+
   }
 }
