@@ -28,71 +28,270 @@
    -->
 
 
+   
    <!DOCTYPE html>
-   <html lang="en">
-   <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    
-   </head>
-   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"> <b> SUKHSAGAR Hospital </b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            </ul>
-            <div class="mx-2">
-                <button style="margin: px;" class="btn btn-danger" data-toggle="model" data-target="#loginModal">
-                    <a style="color: white;" href="javascript:void(0);" routerLink="/doclogin">Login as Doctor</a></button>
-                    <button style="margin: px;" class="btn btn-danger" data-toggle="model" data-target="#loginModal">
-                        <a style="color: white;" href="javascript:void(0);" routerLink="/adlogin">Login as Admin</a></button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukhsagar Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f8fc;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(90deg, #004aad, #00a8e8);
+            box-shadow: 0 4px 6px rgba(206, 5, 5, 0.984);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fefefe;
+        }
+
+        .navbar a {
+            color: #111010;
+            font-weight: 500;
+        }
+
+        .btn-login {
+            border-radius: 30px;
+            padding: 10px 20px;
+        }
+
+        /* Hero Section */
+        .carousel-item img {
+            height: 85vh;
+            object-fit: cover;
+            filter: brightness(65%);
+        }
+
+        .carousel-caption {
+            text-align: center;
+        }
+
+        .carousel-caption h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .carousel-caption p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .carousel-caption .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Features Section */
+        .features {
+            background: #004aad;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .features .icon {
+            font-size: 3rem;
+            color: #ffc107;
+            margin-bottom: 15px;
+        }
+
+        /* Services */
+        .services {
+            padding: 60px 0;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .services .card {
+            border: none;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .services .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .services .card img {
+            border-radius: 5px 5px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .services .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #00274d;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer p,
+        footer a {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sukhsagar Hospital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="ms-auto">
+                    <a href="/doclogin" class="btn btn-light btn-login me-3">Login as Doctor</a>
+                    <a href="/adlogin" class="btn btn-warning btn-login">Login as Admin</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
+    <!-- Hero Section -->
+    <div id="hospitalCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="......." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-secondary btn-lng"><h2>Welcome to SUKHSAGAR</h2></button>
-                    <p></p>
-                    <button class="btn btn-danger">10000+ Heeling Hands</button>
-                    <button class="btn btn-primary">Advanced Treatement</button>
-                    <button class="btn btn-success">Best Clinical OutComes</button>
+                <img src="/assets/1.jpg" class="d-block w-100" alt="Welcome">
+                <div class="carousel-caption">
+                    <h1>Welcome to Sukhsagar Hospital</h1>
+                    <p>Revolutionizing Healthcare with Cutting-Edge Technology</p>
+                    <a href="#features" class="btn btn-primary">Learn More</a>
+                    <a href="#services" class="btn btn-warning">Our Services</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="......." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-secondary btn-lng"><h2>Book an Appointment</h2></button>
-                    <p></p>
-                    <button class="btn btn-danger">10000+ Heeling Hands</button>
-                    <button class="btn btn-primary">Advanced Treatement</button>
-                    <button class="btn btn-success">Best Clinical OutComes</button>
+                <img src="/assets/2.jpg" class="d-block w-100" alt="Book Appointment">
+                <div class="carousel-caption">
+                    <h1>Book Your Appointment</h1>
+                    <p>Consult with World-Class Specialists Anytime</p>
+                    <a href="/appointment" class="btn btn-success">Get Started</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="......." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <button class="btn btn-secondary btn-lng"><h2>Prevention is better than cure!</h2></button>
-                    <p></p>
-                    <button class="btn btn-danger">10000+ Heeling Hands</button>
-                    <button class="btn btn-primary">Advanced Treatement</button>
-                    <button class="btn btn-success">Best Clinical OutComes</button>
+                <img src="/assets/3.jpg" class="d-block w-100" alt="Prevention">
+                <div class="carousel-caption">
+                    <h1>Prevention is Better than Cure</h1>
+                    <p>Ensuring Your Health Today for a Better Tomorrow</p>
+                    <a href="#prevention" class="btn btn-info">Learn More</a>
                 </div>
             </div>
         </div>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
     </div>
-    
-   </body>
-   </html>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <i class="fas fa-user-md icon"></i>
+                    <h5>Expert Doctors</h5>
+                    <p>Access the best specialists in every field, ensuring top-tier care.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-heartbeat icon"></i>
+                    <h5>Advanced Technology</h5>
+                    <p>State-of-the-art equipment and modern treatments.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-ambulance icon"></i>
+                    <h5>24/7 Emergency</h5>
+                    <p>Immediate response and care at any time of day or night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Specialities</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/4.jpg" alt="Cardiology">
+                        <div class="card-body">
+                            <h5 class="card-title">Cardiology</h5>
+                            <p class="card-text">Comprehensive heart care with advanced surgical options.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/5.jpg" alt="Neurology">
+                        <div class="card-body">
+                            <h5 class="card-title">Neurology</h5>
+                            <p class="card-text">Cutting-edge treatment for neurological disorders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/6.jpg" alt="Emergency Care">
+                        <div class="card-body">
+                            <h5 class="card-title">Emergency Care</h5>
+                            <p class="card-text">Round-the-clock emergency services for critical cases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Contact Us: <a href="tel:18603445454">1860 344 5454</a></p>
+            <p>&copy; 2024 Sukhsagar Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

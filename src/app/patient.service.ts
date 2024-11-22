@@ -20,4 +20,8 @@ export class PatientService {
     return this.httpClient.delete(`${this.baseUrl}/${id}`);
 
   }
+  createPatient(patient:Patient):Observable<Patient>{
+    return this.httpClient.post<Patient>(`${this.baseUrl}`,patient);
+
+  }
 }

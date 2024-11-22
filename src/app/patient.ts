@@ -6,5 +6,7 @@ export class Patient {
     blood:string=""
     fees:string=""
     dose:string=""
+prescription: string=""
+urgency: string=""
 
 }

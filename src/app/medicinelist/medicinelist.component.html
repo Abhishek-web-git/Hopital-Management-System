@@ -1,0 +1,44 @@
+<nav style="margin: auto;" class="navbar navbar-expand-lg bg-dark">
+    <a style="color: antiquewhite;" class="navbar-brand" href="#">SUKHSAGAR HOSPITAL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+                <a style="color: antiquewhite;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/create-medicine">Add Medicine</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: antiquewhite;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/appointmentlist">Back</a>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="grid">
+    <div class="container">
+        <h2 style="text-align: center; margin-top: 10px;">Medicine List</h2>
+       
+       
+        <a style="color: rgb(86,86,86); font-size: 25px;">Welcome to Medicine Page . Click Add Medicine to Add Medicine</a>
+        <hr>
+        <div class="tableFixHead">
+
+<table class="table table-striped">
+    <thead class="table-header">
+        <tr>
+            <th>ID</th>
+            <th>Drug Name</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let medicine of medicines">
+            <td>{{medicine.id}}</td>
+            <td>{{medicine.drugName}}</td>
+            <td>{{medicine.stock}}</td>
+        </tr>
+    </tbody>
+</table>
