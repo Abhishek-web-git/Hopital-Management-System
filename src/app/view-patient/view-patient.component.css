@@ -1,0 +1,95 @@
+.container {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    padding: 20px 25px; /* Comfortable padding */
+    max-width: 450px; /* Adjusted for better readability */
+    margin: 30px auto; /* Center alignment with more space */
+    font-family: 'Poppins', sans-serif; /* Modern and elegant font */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.container label {
+    display: flex; /* Flex for alignment */
+    justify-content: space-between; /* Align label text and value */
+    font-size: 16px; /* Increased size for better readability */
+    margin-bottom: 15px; /* Spaced out items */
+    color: #4a4a4a; /* Subtle text color */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Line separator */
+    padding-bottom: 5px; /* Add spacing below text */
+}
+
+.container label:last-child {
+    margin-bottom: 0; /* Remove extra space for the last label */
+    border-bottom: none; /* No line for the last label */
+}
+
+.container b {
+    color: #1a73e8; /* Vibrant blue for emphasis */
+    font-weight: 700; /* Bolder for value differentiation */
+}
+
+.container label span {
+    font-style: italic; /* Optionally style text more uniquely */
+    font-weight: 300; /* Lighter weight for contrast */
+}
+.navbar {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af); /* Modern gradient */
+    border-bottom: 2px solid #1abc9c; /* Accent color at the bottom */
+    padding: 15px 20px; /* Add spacing for better alignment */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    color: #fff; /* Bright white for the brand text */
+    font-weight: bold; /* Highlight the brand name */
+    font-size: 20px; /* Slightly larger font size */
+    text-transform: uppercase; /* Capitalize brand name */
+    transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+}
+
+.navbar-brand:hover {
+    color: #1abc9c; /* Change brand text color on hover */
+    text-shadow: 0px 1px 5px rgba(255, 255, 255, 0.6); /* Subtle glowing effect */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border from toggler */
+    background: #1abc9c; /* Use accent color for toggler button */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom icon */
+}
+
+.nav-item .nav-link {
+    color: #eaeaea; /* Light gray for nav links */
+    font-size: 16px; /* Readable font size */
+    padding: 10px 15px; /* Add padding for better spacing */
+    text-transform: capitalize; /* Capitalize link text */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.nav-item .nav-link:hover {
+    color: #1abc9c; /* Accent color for hover */
+    text-decoration: underline; /* Underline for hover */
+}
+
+.navbar-collapse {
+    justify-content: space-between; /* Spread items out nicely */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+    .navbar-brand {
+        font-size: 18px; /* Slightly smaller font for smaller screens */
+    }
+}

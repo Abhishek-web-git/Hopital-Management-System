@@ -10,7 +10,7 @@
                 <a style="color: antiquewhite;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/create-medicine">Add Medicine</a>
             </li>
             <li class="nav-item">
-                <a style="color: antiquewhite;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/appointmentlist">Back</a>
+                <a style="color: antiquewhite;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/docdash">Back</a>
 
             </li>
         </ul>
@@ -32,6 +32,7 @@
             <th>ID</th>
             <th>Drug Name</th>
             <th>Stock</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -39,6 +40,11 @@
             <td>{{medicine.id}}</td>
             <td>{{medicine.drugName}}</td>
             <td>{{medicine.stock}}</td>
+            <td>
+                <button type="submit" class="btn btn-info" (click)="update(medicine.id)">Update</button>
+                <button type="submit" style="margin-left: 10px;" class="btn btn-danger" (click)="delete(medicine.id)">Delete</button>
+
+            </td>
         </tr>
     </tbody>
 </table>

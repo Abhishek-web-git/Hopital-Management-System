@@ -1,5 +1,5 @@
 <nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
-    <a style="color:white;" class="navbar-brand" href="#">SUKHSAGAR HOSPITALS</a>
+    <a style="color:white;" class="navbar-brand" href="#">SUKHSAGAR HOSPITAL</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span></button>
@@ -47,8 +47,10 @@
         <th>Name</th>
         <th>Age </th>
         <th>Blood group </th>
+        <th>Dose</th>
         <th>Urgency </th>
         <th>Action</th>
+        
     </tr>
 </thead>
 
@@ -58,10 +60,18 @@
         <td>{{patient.name}}</td>
         <td>{{patient.age}}</td>
         <td>{{patient.blood}}</td>
+        <td>{{patient.dose}}</td>
         <td>{{patient.urgency}}</td>
         <td>
-            <button (click)="update(patient.id)" class="btn btn-success">Update</button>
+            <button (click)="update(patient.id)" class="btn btn-info">Update</button>
+            <button (click)="delete(patient.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+             <button (click)="view(patient.id)" class="btn btn-success" style="margin-left: 10px;">View</button>
+
         </td>
+         
+             
+
+        
 
         
         </tbody>

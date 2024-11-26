@@ -19,4 +19,15 @@ export class MedicineService {
   createMedicine(medicine:Medicine):Observable<Medicine>{
     return this.httpClient.post<Medicine>(`${this.baseUrl}`,medicine);
   }
+
+  getMedicineById(id:number):Observable<Medicine>{
+    return this.httpClient.get<Medicine>(`${this.baseUrl}/${id}`);
+  }
+  updateMedicine(id:number,medicine:Medicine):Observable<object>{
+    return this.httpClient.put<Medicine>(`${this.baseUrl}/${id}`,medicine);
+  }
+  delete(id:number):Observable<object>{
+    return this.httpClient.delete(`${this.baseUrl}/${id}`);
+
+  }
 }
