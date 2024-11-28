@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #e9f5ff, #f7f9fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #495057;
+}
+
+/* Navbar */
+.custom-navbar {
+    background: #ffffff;
+    border-bottom: 2px solid #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+.custom-navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #007bff;
+    letter-spacing: 0.5px;
+}
+.custom-navbar .nav-link {
+    color: #495057;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.custom-navbar .nav-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Login Card */
+.login-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.login-card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+.login-card p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+.login-card .form-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #343a40;
+}
+.login-card .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+.login-card .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7e);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+.btn-outline-secondary {
+    background: #ffffff;
+    border: 2px solid #ced4da;
+    color: #495057;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+.btn-outline-secondary:hover {
+    background: #f8f9fa;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+/* Spacing and Layout */
+.container {
+    margin-top: 50px;
+}

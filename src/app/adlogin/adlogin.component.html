@@ -1,0 +1,42 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+    <a class="navbar-brand" href="#">SUKHSAGAR HOSPITAL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/home">Home</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Login Card -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg p-4 login-card">
+                <div class="text-center mb-4">
+                    <h1 class="text-primary">Login as Admin</h1>
+                    <p class="text-muted">Access your account by entering your credentials</p>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <button (click)="checkLogin()" class="btn btn-primary px-4 py-2">Login</button>
+                        <button class="btn btn-outline-secondary px-4 py-2" type="button" routerLink="/home">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

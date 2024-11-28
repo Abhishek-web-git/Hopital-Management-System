@@ -19,8 +19,7 @@
 
     <div class="mx-2">
         <button style="margin: 5px;" class="btn btn-danger" data-toggle="modal" data-target="#loginModal">
-            <a style="color: white;" href="javascript:void(0);" routerLink="/home">Logout</a></button>
-
+            <a style="color: white;" href="javascript:void(0);" (click)="logout()">Logout</a></button>
     </div>
 
 </div>
@@ -67,15 +66,7 @@
             <button (click)="delete(patient.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
              <button (click)="view(patient.id)" class="btn btn-success" style="margin-left: 10px;">View</button>
 
-        </td>
-         
-             
-
-        
-
-        
+        </td>  
         </tbody>
-
-
 </table>
 </div>
